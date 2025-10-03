@@ -67,6 +67,8 @@ Abre otra terminal (preferentemente WSL/Bash, en ~/proyecto_fastapi_brute), acti
 chmod +x bash.sh  # Solo primera vez
 ./bash.sh
 
-Qué hace: Lanza python3 BruteForce.py 4 con header y chequeos (e.g., si python3 existe). Config en bash.sh (edita TARGET_USER/MAX_LENGTH).
+Qué hace: Lanza python3 BruteForce.py 4 con header y chequeos (e.g., si python3 existe). 
+
+Config en bash.sh (edita TARGET_USER/MAX_LENGTH).
 
 Salida: Similar a directo, con wrapper extra ("Ejecutando python3 BruteForce.py...").
