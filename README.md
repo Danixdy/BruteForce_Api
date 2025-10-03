@@ -4,6 +4,7 @@ Este proyecto implementa una API REST con FastAPI que permite realizar operacion
 
 Nota: El script de brute force está optimizado para simplicidad (usa itertools para generación y requests para POST). Prueba contraseñas alfanuméricas hasta longitud 4 (configurable). Para demo rápida, usa solo números y longitud 2.
 
+## Guia del proyecto
 ~/proyecto_fastapi_brute/
 ├── main.py              # API con FastAPI (CRUD + endpoint /login)
 ├── BruteForce.py        # Script de ataque de fuerza bruta (Python puro, maneja 400/202)
@@ -61,4 +62,5 @@ chmod +x bash.sh  # Solo primera vez
 ./bash.sh
 
 Qué hace: Lanza python3 BruteForce.py 4 con header y chequeos (e.g., si python3 existe). Config en bash.sh (edita TARGET_USER/MAX_LENGTH).
+
 Salida: Similar a directo, con wrapper extra ("Ejecutando python3 BruteForce.py...").
