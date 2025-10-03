@@ -6,6 +6,7 @@ Nota: El script de brute force está optimizado para simplicidad (usa itertools 
 
 ## Guia del proyecto
 ~/proyecto_fastapi_brute/
+
 ├── main.py              # API con FastAPI (CRUD + endpoint /login)
 ├── BruteForce.py        # Script de ataque de fuerza bruta (Python puro, maneja 400/202)
 ├── bash.sh              # Launcher opcional para brute force (simple wrapper)
