@@ -16,7 +16,9 @@ Nota: El script de brute force está optimizado para simplicidad (usa itertools 
 └── README.md            
 
 main.py: Define la API con modelos Pydantic para usuarios (username, password). Incluye endpoints CRUD y login simple (retorna "Login successful" en 200 si coincide).
-BruteForce.py: Genera passwords secuenciales (1 a MAX_LENGTH chars) y envía POST a /login. Ignora 400 (Bad Request), chequea éxito en 200/202. Config editable al inicio.
+BruteForce.py: Genera passwords secuenciales (1 a MAX_LENGTH chars) y envía POST a /login. 
+Ignora 400 (Bad Request), chequea éxito en 200/202. 
+Config editable al inicio.
 bash.sh: Script Bash simple para lanzar python3 BruteForce.py con chequeos (opcional; usa directo si prefieres).
 
 ## Instalación
@@ -40,7 +42,9 @@ Asegura venv activado (source venv/bin/activate).
 Desde la carpeta del proyecto (~/proyecto_fastapi_brute), ejecuta:
 ## Ejecución de la API
 fastapi dev main.py --host 127.0.0.1 --port 8000
+
 Esto inicia el servidor en http://127.0.0.1:8000 (o http://localhost:8000).
+
 Logs: La terminal muestra requests (e.g., 200/400/202). No uses esta terminal para otros comandos.
 
 ## Endpoints Principales
