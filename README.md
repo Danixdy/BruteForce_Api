@@ -16,9 +16,12 @@ Nota: El script de brute force está optimizado para simplicidad (usa itertools 
 └── README.md            
 
 main.py: Define la API con modelos Pydantic para usuarios (username, password). Incluye endpoints CRUD y login simple (retorna "Login successful" en 200 si coincide).
-BruteForce.py: Genera passwords secuenciales (1 a MAX_LENGTH chars) y envía POST a /login. 
-Ignora 400 (Bad Request), chequea éxito en 200/202. 
+BruteForce.py: Genera passwords secuenciales (1 a MAX_LENGTH chars) y envía POST a /login.
+
+Ignora 400 (Bad Request), chequea éxito en 200/202.
+
 Config editable al inicio.
+
 bash.sh: Script Bash simple para lanzar python3 BruteForce.py con chequeos (opcional; usa directo si prefieres).
 
 ## Instalación
