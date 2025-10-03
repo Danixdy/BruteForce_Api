@@ -37,16 +37,18 @@ Esto inicia el servidor en http://127.0.0.1:8000 (o http://localhost:8000).
 Logs: La terminal muestra requests (e.g., 200/400/202). No uses esta terminal para otros comandos.
 
 ## Endpoints Principales
-POST /users: Crear usuario (body: {"username": "test", "password": "12"}). Retorna 200 si OK, 400 si duplicado.
-GET /users: Listar todos los usuarios (JSON con usernames y passwords hashed/no en tu caso).
-GET /users/{id}: Obtener usuario por ID (e.g., /users/1).
-PUT /users/{id}: Actualizar usuario por ID (body como POST).
-DELETE /users/{id}: Eliminar usuario por ID.
-POST /login: Autenticar (body: {"username": "admin", "password": "1234"}). Retorna 200 con "Login successful" si correcto, 401/400 si falla.
+* POST /users: Crear usuario (body: {"username": "test", "password": "12"}). Retorna 200 si OK, 400 si duplicado.
+* GET /users: Listar todos los usuarios (JSON con usernames y passwords hashed/no en tu caso).
+* GET /users/{id}: Obtener usuario por ID (e.g., /users/1).
+* PUT /users/{id}: Actualizar usuario por ID (body como POST).
+* DELETE /users/{id}: Eliminar usuario por ID.
+* POST /login: Autenticar (body: {"username": "admin", "password": "1234"}). Retorna 200 con "Login successful" si correcto, 401/400 si falla.
 Ejemplo manual con curl (API corriendo):
 
 Crear user: curl -X POST "http://localhost:8000/users" -H "Content-Type: application/json" -d '{"username":"test","password":"12"}'
+
 Login: curl -X POST "http://localhost:8000/login" -H "Content-Type: application/json" -d '{"username":"admin","password":"1234"}' → {"message":"Login successful"}
+
 User por default: Asume "admin" con password "1234" (verifica en main.py o crea via POST).
 
 ## Ejecución del Ataque de Fuerza Bruta
