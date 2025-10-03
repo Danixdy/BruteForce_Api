@@ -21,17 +21,19 @@ bash.sh: Script Bash simple para lanzar python3 BruteForce.py con chequeos (opci
 
 ## Instalación
 1. Crear y Activar Entorno Virtual (Recomendado)
-En WSL/Bash, desde ~/proyecto_fastapi_brute:
+    En WSL/Bash, desde ~/proyecto_fastapi_brute:
 
-python3 -m venv venv
-source venv/bin/activate  # Activa venv (prompt muestra (venv))
+    python3 -m venv venv
+    source venv/bin/activate  # Activa venv (prompt muestra (venv))
 
 2. Instalar Dependencias
-Crea requirements.txt si no existe (nano requirements.txt y pega):
+    Crea requirements.txt si no existe (nano requirements.txt y pega):
 
-fastapi[standard]==0.104.1
-sqlmodel
-requests==2.31.0
+    fastapi[standard]==0.104.1
+    sqlmodel
+    requests==2.31.0
+
+   o en su caso instalar individualmete con pip install
 
 Asegura venv activado (source venv/bin/activate).
 
